@@ -59,7 +59,26 @@ class Iphone12Pro(val price: Double) : Iphone(3453){
     fun sideBarScan() {}
 }
 
+// encapsulation
+class check {
+    private var password: String = ""
 
+    // default public
+    var temp: Int = 10
+
+    // custom setter and getter for privacy
+    var tempAdd1: Int = 0
+        get() = field
+        set(value) { field = value }
+
+    // private setter alone, but public access
+    var tempAdd2: Int = 0
+        private set
+    fun setTempAdd2(value: Int) {
+        tempAdd2 = value
+    }
+
+}
 
 // overloading, overriding
 // compile time polymorphism - overloading
@@ -145,7 +164,6 @@ class Bat : Bird, Mammal{
     override fun birth() {
     }
 }
-
 
 
 
@@ -244,6 +262,17 @@ class Iphone13(val id: Int) : FaceScan{
 }
 
 // singleton class - only one object can be created
-fun main(args: Array<String>) {
 
+
+// generics - auto adjust the data type
+class AddValues<T>(a: T, b: T) {
+    init {
+        println(a + b)
+    }
+}
+
+
+fun main(args: Array<String>) {
+    val addS = AddValues("first", "second")
+    val addI = AddValues(10, 20)
 }
