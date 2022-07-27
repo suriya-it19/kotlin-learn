@@ -296,3 +296,12 @@ fun main(args: Array<String>) {
     val addS = AddValues("first", "second")
     val addI = AddValues(10, 20)
 }
+
+class MagicFunctions:
+        def __init__(self, first, second):
+            self.first = first
+            self.second = second
+        def __len__(self):
+            return 2
+        def __getitem__(self, idx):
+            return (second if idx==2 else (first if idx==1 else 0))

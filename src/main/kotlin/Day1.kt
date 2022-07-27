@@ -290,9 +290,3 @@ class Registration( email: String, pwd: String, age: Int , gender: Char) {
             field = if(value == 'M') value else throw IllegalArgumentException("User should be male")
         }
 }
-
-//He is my interviewer during my internship at coimbatore bro, I asked, if its ML role it will be good, he said like based on the performance it will be mapped​
-
-
-
-3 1 5 2 4   1 1 2 2 4

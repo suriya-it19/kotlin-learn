@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+//    compile "com.github.jkcclemens:khttp:0.1.0"
 }
 
 tasks.test {
