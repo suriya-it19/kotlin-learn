@@ -13,7 +13,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.7.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    implementation("org.jetbrains.kotlin:kotlinx-coroutines-core:1.3.9")
+    implementation("com.github.jkcclemens:khttp:0.1.0")
 //    compile "com.github.jkcclemens:khttp:0.1.0"
 }
 
