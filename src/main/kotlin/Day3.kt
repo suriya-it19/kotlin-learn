@@ -70,3 +70,29 @@ fun temp(like: String = "hi") {
 
 
 }
+
+class StaticExample {
+    companion object StaticBlock {
+        var x = 1
+        fun openAdd() {
+            x++
+        }
+    }
+}
+
+fun main(args: Array<String>) {
+    println(StaticExample.x)
+    StaticExample.openAdd()
+    println(StaticExample.x)
+
+
+    // labeled break
+    outer@ for (num1 in 4 downTo 1) {
+
+        inner@ for (num2 in 4 downTo 1) {
+            if (num1 == 2)
+                break@outer
+            println("num1 = $num1; num2 = $num2")
+        }
+    }
+}

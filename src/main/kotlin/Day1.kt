@@ -15,7 +15,7 @@ open class CarForSale(name: String) {
 // constructor - no need of assignment, it automatically assigns
 // if needed you can use init to make some changes if needed and assign
 // another type is secondary constructor - that can be inside the class same as java
-class CarValue(var brand: Int = "mustang", var model: String, var year: Int) : CarForSale("default") {
+class CarValue( brand: String = "mustang", var model: String, var year: Int) : CarForSale("default") {
     fun speed(maxSpeed: Int) {
         println("Max speed for $value is: $maxSpeed")
     }
